@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public interface IDamageale
+public interface IDamagable
 {
     void TakePhysicalDamage(int damageAmount);
 }
@@ -37,7 +37,7 @@ public class Condition
 
 }
 
-public class PlayerConditions : MonoBehaviour, IDamageale
+public class PlayerConditions : MonoBehaviour, IDamagable
 {
     public Condition health;
     public Condition hunger;
